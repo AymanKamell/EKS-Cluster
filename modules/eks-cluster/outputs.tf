@@ -28,6 +28,11 @@ output "kubeconfig_cluster_name" {
   value = aws_eks_cluster.eks.name
 }
 
+output "cluster_name" {
+  description = "The name of the EKS cluster"
+  value       = aws_eks_cluster.eks.name
+}
+
 output "region" {
   value = var.region
 }
